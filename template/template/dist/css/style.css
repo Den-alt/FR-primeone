@@ -1,3 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:regular);
+
+@font-face {
+  font-family: "Grotesk";
+  font-display: swap;
+  src: url("../fonts/AkzidenzGrotesk-BoldCond.woff") format("woff"), url("../fonts/AkzidenzGrotesk-BoldCond.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BEBAS";
+  font-display: swap;
+  src: url("../fonts/BEBAS.woff") format("woff"), url("../fonts/BEBAS.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
 /*----reset-css----*/
 
 * {
