@@ -40,6 +40,17 @@ body {
 }
 body.lock {
   overflow: hidden;
+  @media (max-width: 767px) {
+    .wrapper {
+      .page {
+        header.header {
+          height: 100%;
+          width: 100%;
+          overflow: auto;
+        }
+      }
+    }
+  }
 }
 input,
 button,
