@@ -1,5 +1,4 @@
 .header {
-  position: fixed;
   width: 100%;
   height: 175px;
   overflow: hidden;
@@ -8,6 +7,20 @@
     width: 100%;
     height: 180px;
     overflow: hidden;
+  }
+  &__position {
+    position: fixed;
+    width: 100%;
+    height: 175px;
+    overflow: hidden;
+    background-color: #fff;
+    z-index: 5;
+    @media (max-width: 767px) {
+      width: 100%;
+      height: 180px;
+      overflow: hidden;
+      transition: all 0.9s ease 0s;
+    }
   }
   &__body {
     position: relative;

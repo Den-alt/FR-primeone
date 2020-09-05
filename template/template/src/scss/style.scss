@@ -62,9 +62,118 @@ $font_family: "PT Sans", sans-serif;
   }
 }
 //*---------------------------------------
-.main-screen{
-  background: #000;
-  width: 100%;
-  height: 100vh;
+.main-screen {
+  &__body {
+    display: flex;
+    flex-direction: row;
+    background-color: #000000;
+  }
+  &__logo {
+    height: 100%;
+  }
+  &__content {
+    flex: 0 0 50%;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 310px;
+    margin: 75px 0 75px 62px;
+    color: #fff;
+  }
+
+  &__title {
+    font-family: "Grotesk";
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+
+  &__text {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 27px 0 0 0;
+  }
+
+  &__buttons {
+    font-weight: 400;
+    margin: 45px 0 0 0;
+  }
+
+  &__link {
+    color: #000000;
+    margin: 0 15px 0 0;
+  }
+
+  &__link-c {
+    font-family: "BEBAS";
+    font-size: 15px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #fff;
+    text-decoration: underline;
+  }
+  @media (max-width: 767px) {
+    &__container {
+      max-width: 270px;
+      margin: 75px 15px 75px 62px;
+    }
+    &__title {
+      font-size: 35px;
+      line-height: 35px;
+    }
+
+    &__text {
+      font-size: 15px;
+      line-height: 15px;
+    }
+
+    &__buttons {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    &__link {
+      margin: 0 5px 0 0;
+    }
+
+    &__link-c {
+    }
+  }
+  @media (max-width: 470px) {
+    &__body {
+      flex-direction: column;
+    }
+    &__container {
+      margin: 45px 15px 35px 42px;
+    }
+    &__logo {
+      height: 0%;
+    }
+  }
+}
+
+.btn {
+  width: 160px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #000;
+  display: inline-block;
+  padding: 0 33px;
+  font-size: 15px;
+  font-family: "BEBAS";
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1.5px;
+  &__w {
+    background-color: #fff;
+    color: #000;
+  }
 }
 //TODO------------------------------------

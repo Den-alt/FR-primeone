@@ -44,9 +44,12 @@ body.lock {
     .wrapper {
       .page {
         header.header {
-          height: 100%;
-          width: 100%;
-          overflow: auto;
+          .header__position {
+            height: 100%;
+            width: 100%;
+            overflow: auto;
+            transition: all 0.9s ease 0s;
+          }
         }
       }
     }
